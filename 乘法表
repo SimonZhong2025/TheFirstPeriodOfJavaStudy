@@ -1,0 +1,32 @@
+package package1;
+import java.util.Scanner;
+public class chengfabiaoright {
+	public static void main(String[]args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.print("您想要哪个乘法表？（右对齐：2, 左对齐：1）");
+	int y= scanner.nextInt();
+	if(y==2){
+	for(int i=1;i<=9;i++) {
+		for(int k=1;k<=9-i;k++) {
+			System.out.print("\t");
+		}
+		for(int j=1;j<=i;j++) {
+			System.out.printf("%dx%d=%d	",j,i,j*i);
+			
+		}
+		System.out.println();
+	}
+	}
+	else {
+		for(int i=1;i<=9;i++) {
+			for(int j=i;j<=9;j++) {
+				System.out.printf("%dx%d=%d\t",i,j,i*j);
+			}
+			System.out.println();
+			for(int z=i;z>0;z--) {
+				System.out.print("\t");
+			}
+	}
+	}
+	}
+}
