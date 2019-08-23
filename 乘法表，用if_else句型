@@ -1,0 +1,19 @@
+public static void main(String[] args) {
+		  for(int x=0;x<=9;x++) {
+		   for(int y=0;y<=9;y++) {
+		    if (x==0 && y == 0) {
+		    System.out.print("*");
+		    } else if (y == 0) {
+		    System.out.print(x);
+		    } else if (x == 0) {
+		    System.out.print(y);
+		    } else if (y < x) {
+		    System.out.print(" ");
+		    } else {
+		    System.out.print(x * y);
+		    }
+		    System.out.print("\t");
+		   }
+		    System.out.println();
+		  }
+}
