@@ -1,6 +1,6 @@
 package package1;
 /*静态导入
- *这里导入了Math类的pow方法和System类的out方法，这两个类都在lang包中，所以是lang.
+ *这里导入了Math类的pow方法和System类的print方法，这两个类都在lang包中，所以是lang.
  *静态导入可以使页面更加简洁，不仅如此，还可以使输入更加方便。
  *可以导入很多，这里暂时只是用到pow和out这两个方法而已。
  */
@@ -9,7 +9,9 @@ import static java.lang.System.out;
 public class TestCode {
 	    public static void main(String[] args) {
 	    	int a=2,b=3;
-	       out.print((int)pow(a, b));
+//静态导入system类，可以更加简洁，不需要“System.”
+//并且Math.pow变成了pow，也简洁了，对于大型的复杂程序，这样可以更加方便
+	       out.print(pow(a, b));
 	    }
 
 }
