@@ -1,0 +1,11 @@
+package javaTest1;
+public class Test{
+    public static void main(String[] args) {
+        Goods goodsA = new Goods("notebook",1.1);
+        Goods goodsB = new Goods(2.2);
+        Goods goodsC = new Goods("Java class",233,"www.cnblogs.com/mfrank/p/7747587.html");
+        goodsA.print();
+        goodsB.print();
+        goodsC.print();
+    }
+}
