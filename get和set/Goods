@@ -1,0 +1,53 @@
+package javaTest1;
+
+public class Goods{
+    private String title="";
+    private double price=0.0;
+    private String link = "";
+
+    public Goods(String aTitle,double aPrice,String aLink){
+        title = aTitle;
+        price = aPrice;
+        link = aLink;
+    }
+
+    public Goods(String aTitle,double aPrice){
+        title = aTitle;
+        price = aPrice;
+        link = "www.baidu.com";
+    }
+
+    public Goods(double aPrice){
+        price = aPrice;
+        title = "Goods";
+        link = "www.baidu.com";
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setTitle(String aTitle){
+        title = aTitle;
+    }
+
+    public void setPrice(double aPrice){
+        price = aPrice;
+    }
+
+    public void setLink(String aLink){
+        link = aLink;
+    }
+
+    public void print(){
+        System.out.println("title:"+title+" price:"+price+" link:"+link);
+    }
+}
