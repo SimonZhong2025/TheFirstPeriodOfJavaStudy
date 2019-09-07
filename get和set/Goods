@@ -1,5 +1,10 @@
 package javaTest1;
-
+/*public允许任何其他类访问
+*无修饰符的情况姑且称为default，访问范围是package，就是同一个包中的类可访问
+*protected 子类可访问
+*private 自己能访问 
+*所以这个不用“public class”而用“class”也可以，因为在同一个package中
+*/
 public class Goods{
     private String title="";
     private double price=0.0;
