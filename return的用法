@@ -1,0 +1,14 @@
+public class Sum Method{
+ public static void main(String[] args){
+   int n=10;
+   int and = sum(n);
+   System.out.println("The and is"+and)
+  }
+  public static int sum(int b){
+  int result = 0;
+  for (int j=1;j<=b;j++){
+  result+=j;
+  }
+  return result;
+ }
+}
