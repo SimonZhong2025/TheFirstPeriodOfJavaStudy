@@ -1,0 +1,28 @@
+package javaTest1;
+
+class Types {
+	 private int x=1,y=2,z=3;
+	 //直接调用方法而不需要返回某个值，所以不需要用return
+		void get(int m) {
+			int x=m;
+			int y=10;
+			int z=7;
+			System.out.println("In get:");
+			System.out.println("x="+x+" y="+y+" z="+this.z);
+		}
+	    void show() {
+			System.out.println("x="+x+" y="+y+" z="+z);
+		}
+	}
+
+public class Sum2 {
+	public static void main(String [] args) {
+		Types types1 = new Types();
+		System.out.println("Before get:");
+		types1.show();
+		types1.get(8);
+		System.out.println("After get:");
+		types1.show();
+	}
+	
+}
