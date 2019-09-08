@@ -1,10 +1,12 @@
-class MathFormula{
-  static int add(int a,int b){
+class MathFormula{//定义类
+  static int add(int a,int b){//定义静态方法add，从而实现类方法的调用
     return a+b;
     }
   public class StaticMethod{
     public static void main(String[] args){
       int x=15,y=5,z;
-      z=MathFormula.add(x,y);
+      z=MathFormula.add(x,y);//只需要用类名来调用即可
      }
  }
+//类方法直接和类联系在一起，它不能通过类的实例来调用，类方法中不能有队类的对象变量的操作
+//如果用static属性定义的方法为类方法，则这种类型的类方法的调用无需创建类实例，只需要用类名来调用即可
