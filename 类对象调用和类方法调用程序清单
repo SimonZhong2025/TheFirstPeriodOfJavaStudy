@@ -1,0 +1,41 @@
+package javaTest1;
+
+import static java.lang.System.out;
+
+class Family {// 创建类
+	static private String surname = "王";// 类静态变量
+	private String givename;// 私有变量
+
+	static String getSurname() {// 类静态方法
+		return surname;
+	}
+
+	static void changeSurname(String surname) {// 类静态方法
+		Family.surname = surname;// 只能使用带类名的限定名
+	}
+
+	Family(String givename) {// 带参数的构造方法
+		this.givename = givename;// 对象变量，可以使用关键字this
+	}
+
+	Family() {// 不带参数的构造方法
+		this.givename = "小二";
+	}
+
+	public String name() {
+		return (surname + givename);// 使用简单名称来引用类变量
+	}
+}
+
+public class StopForm {
+	public static void main(String[] args) {
+		out.println("1" + Family.getSurname());// 类方法调用
+		Family a = new Family();// 声明并创建对象
+		out.println("2" + a.getSurname());// 类对象调用
+		out.println("3" + a.name());// 类对象调用
+		Family b = new Family("小刚");
+		Family.changeSurname("张");
+		out.println("4" + b.getSurname());
+		out.println("5" + b.name());
+	}
+}
