@@ -11,7 +11,7 @@ class Family { // 创建类
 	}
 
 	static void changeSurname(String surname) { // 类静态方法,因为上面类静态变量已经定义了王，所以要这样做才能改变王
-		Family.surname = surname; // 只能使用带类名的限定名
+		Family.surname = surname; // *只能使用带类名的限定名*是什么意思
 	}
 
 	Family(String givename) { // 带参数的构造方法,而且使用default，会保留封装
