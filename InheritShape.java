@@ -30,4 +30,3 @@ public class InheritShape extends Shape {
 		a.test();
 	}
 }
-//试一下同步
