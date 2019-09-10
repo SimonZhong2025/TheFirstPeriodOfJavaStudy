@@ -36,3 +36,4 @@ public class Hero extends Heroric {
 	}
 
 }
+
