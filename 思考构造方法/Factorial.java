@@ -2,7 +2,7 @@ package package2;
 
 public class Factorial {
 
-	static int factorial(int a) { // 类方法可以直接调用，本句中省略了修饰符，以及第一个int代表返回值类型是整型
+	static int factorial(int a) { // 绫绘柟娉曞彲浠ョ洿鎺ヨ皟鐢紝鏈彞涓渷鐣ヤ簡淇グ绗︼紝浠ュ強绗竴涓猧nt浠ｈ〃杩斿洖鍊肩被鍨嬫槸鏁村瀷
 		if (a == 1) {
 			return a = 1;
 		} else {
