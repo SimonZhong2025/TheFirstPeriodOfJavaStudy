@@ -9,10 +9,10 @@ class Person {
 		this.age = age;
 	}
 
-	protected Person() {//子类继承父类的时候会自动继承父类的默认构造函数（也就是继承那个无参数的构造函数）
+	protected Person() {//瀛愮被缁ф壙鐖剁被鐨勬椂鍊欎細鑷姩缁ф壙鐖剁被鐨勯粯璁ゆ瀯閫犲嚱鏁帮紙涔熷氨鏄户鎵块偅涓棤鍙傛暟鐨勬瀯閫犲嚱鏁帮級
 	}
 
-	public void getInfo() {//get引入
+	public void getInfo() {//get寮曞叆
 		System.out.println(name);
 		System.out.println(age);
 	}
