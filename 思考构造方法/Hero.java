@@ -36,3 +36,6 @@ public class Hero extends Heroric {
 	}
 
 }
+
+/*这里用到的是引用传递的方法，记住这个格式。引用传递可以引用到实例中的全部属性。这个比单纯的值传递的作用大一些，但各有好处，值得注意的是bh.attack。
+ *也就是L18和L22的name是this.Hero.name也就是bh的name。所以输出结果就是“赏金猎人”
