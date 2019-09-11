@@ -17,9 +17,13 @@ interface Circle2 extends Circle1 {
 }
 
 class Circle {
-	// ÓÃstatic void ºÍ²»ÓÃstaticµÄÇø±ğ£¬µ÷ÓÃstatic»áÔì³É¿Õ¼äÀË·Ñ£¿
-	public static void Show() {
-		out.print("»¶Ó­Äş");
+	// ç”¨static void å’Œä¸ç”¨staticçš„åŒºåˆ«ï¼Œè°ƒç”¨staticä¼šé€ æˆç©ºé—´æµªè´¹ï¼Ÿ
+	/* æš‚æ—¶è§‰å¾—ï¼Œåº”è¯¥æ˜¯showæ–¹æ³•ä¸æ¶‰åŠè¿™ä¸ªå®ä¾‹çš„çŠ¶æ€ï¼Œæ‰€ä»¥è¦ç”¨staticï¼Œåˆå› ä¸ºä¸‹é¢å·²ç»æ˜¯ç»§æ‰¿å…³ç³»ï¼Œæ‰€ä»¥è°ƒç”¨Showç±»çš„æ—¶å€™åªéœ€è¦ç”¨Show()
+	 * å°±å¯ä»¥äº†ã€‚
+	 */
+	
+ 	public static void Show() {
+		out.print("æ¬¢è¿å®");
 	}
 }
 
@@ -29,7 +33,9 @@ public class Cylinder extends Circle implements Circle2 {
 	}
 
 	public double faceArea() {
-		// Ö±½ÓÓÃarea()ÊÇÒòÎªÉÏÃæÓĞreturnÖµ£¬ËùÒÔ²ÅÓÃarea()?
+		// ç›´æ¥ç”¨area()æ˜¯å› ä¸ºä¸Šé¢æœ‰returnå€¼ï¼Œæ‰€ä»¥æ‰ç”¨area()?
+		// å°±æ˜¯ç›´æ¥è°ƒç”¨areaæ–¹æ³•ï¼Œé‚£ä½ ä¸ç”¨()å¹²å˜›
+		
 		return Math.PI * 2 * radius * height + area() * 2;
 	}
 
@@ -39,9 +45,9 @@ public class Cylinder extends Circle implements Circle2 {
 
 	public static void main(String[] args) {
 		Cylinder aCylinder = new Cylinder();
-		out.printf("µ×ÃæÃæ»ıÊÇ%1.5f\n", aCylinder.area());
-		out.printf("±íÃæ»ıÊÇ%1.5f\n", aCylinder.faceArea());
-		out.printf("Ìå»ıÊÇ%1.5f\n", aCylinder.volume());
+		out.printf("åº•é¢é¢ç§¯æ˜¯%1.5f\n", aCylinder.area());
+		out.printf("è¡¨é¢ç§¯æ˜¯%1.5f\n", aCylinder.faceArea());
+		out.printf("ä½“ç§¯æ˜¯%1.5f\n", aCylinder.volume());
 		Show();
 	}
 }
