@@ -20,6 +20,7 @@ class Circle {
 	// 用static void 和不用static的区别，调用static会造成空间浪费？
 	/* 暂时觉得，应该是show方法不涉及这个实例的状态，所以要用static，又因为下面已经是继承关系，所以调用Show类的时候只需要用Show()
 	 * 就可以了。
+	 * 然后的话有static就可以子类隐藏而不是子类覆盖。
 	 */
 	
  	public static void Show() {
