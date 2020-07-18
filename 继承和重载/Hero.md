@@ -1,3 +1,4 @@
+```
 package package2;
 
 class Heroric {
@@ -36,4 +37,4 @@ public class Hero extends Heroric {
 	}
 
 }
-
+```
